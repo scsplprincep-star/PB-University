@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Node
 **/node_modules/
 **/dist/
@@ -17,3 +18,8 @@ obj/
 
 # Logs
 *.log
+=======
+node_modules/
+dist/
+.env
+>>>>>>> 9383da4a53b528a1cfdf59074ddd22a31dabace8

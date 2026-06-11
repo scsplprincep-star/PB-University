@@ -1,0 +1,579 @@
+﻿{
+    "openapi":  "3.0.1",
+    "info":  {
+                 "title":  "Student_api",
+                 "version":  "1.0"
+             },
+    "paths":  {
+                  "/api/new_student_details_contoller/new_student_details_insert":  {
+                                                                                        "post":  {
+                                                                                                     "tags":  [
+                                                                                                                  "new_student_details_contoller"
+                                                                                                              ],
+                                                                                                     "requestBody":  {
+                                                                                                                         "content":  {
+                                                                                                                                         "multipart/form-data":  {
+                                                                                                                                                                     "schema":  {
+                                                                                                                                                                                    "type":  "object",
+                                                                                                                                                                                    "properties":  {
+                                                                                                                                                                                                       "create_By":  {
+                                                                                                                                                                                                                         "type":  "integer",
+                                                                                                                                                                                                                         "format":  "int32"
+                                                                                                                                                                                                                     },
+                                                                                                                                                                                                       "first_name":  {
+                                                                                                                                                                                                                          "type":  "string"
+                                                                                                                                                                                                                      },
+                                                                                                                                                                                                       "middle_name":  {
+                                                                                                                                                                                                                           "type":  "string"
+                                                                                                                                                                                                                       },
+                                                                                                                                                                                                       "nsd_last_name":  {
+                                                                                                                                                                                                                             "type":  "string"
+                                                                                                                                                                                                                         },
+                                                                                                                                                                                                       "nsd_gender":  {
+                                                                                                                                                                                                                          "type":  "integer",
+                                                                                                                                                                                                                          "format":  "int32"
+                                                                                                                                                                                                                      },
+                                                                                                                                                                                                       "nsd_date_of_birth":  {
+                                                                                                                                                                                                                                 "type":  "string",
+                                                                                                                                                                                                                                 "format":  "date-time"
+                                                                                                                                                                                                                             },
+                                                                                                                                                                                                       "nsd_age":  {
+                                                                                                                                                                                                                       "type":  "integer",
+                                                                                                                                                                                                                       "format":  "int32"
+                                                                                                                                                                                                                   },
+                                                                                                                                                                                                       "nsd_original_profile_photo":  {
+                                                                                                                                                                                                                                          "type":  "string"
+                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                       "ProfilePhotoFile":  {
+                                                                                                                                                                                                                                "type":  "string",
+                                                                                                                                                                                                                                "format":  "binary"
+                                                                                                                                                                                                                            },
+                                                                                                                                                                                                       "nsd_mobile_number":  {
+                                                                                                                                                                                                                                 "type":  "string"
+                                                                                                                                                                                                                             },
+                                                                                                                                                                                                       "nsd_email":  {
+                                                                                                                                                                                                                         "type":  "string"
+                                                                                                                                                                                                                     },
+                                                                                                                                                                                                       "nsd_address":  {
+                                                                                                                                                                                                                           "type":  "string"
+                                                                                                                                                                                                                       },
+                                                                                                                                                                                                       "nsd_state":  {
+                                                                                                                                                                                                                         "type":  "integer",
+                                                                                                                                                                                                                         "format":  "int32"
+                                                                                                                                                                                                                     },
+                                                                                                                                                                                                       "nsd_country":  {
+                                                                                                                                                                                                                           "type":  "integer",
+                                                                                                                                                                                                                           "format":  "int32"
+                                                                                                                                                                                                                       },
+                                                                                                                                                                                                       "nsd_father_name":  {
+                                                                                                                                                                                                                               "type":  "string"
+                                                                                                                                                                                                                           },
+                                                                                                                                                                                                       "nsd_mother_name":  {
+                                                                                                                                                                                                                               "type":  "string"
+                                                                                                                                                                                                                           },
+                                                                                                                                                                                                       "nsd_parent_contact_number":  {
+                                                                                                                                                                                                                                         "type":  "string"
+                                                                                                                                                                                                                                     },
+                                                                                                                                                                                                       "nsd_parent_email":  {
+                                                                                                                                                                                                                                "type":  "string"
+                                                                                                                                                                                                                            },
+                                                                                                                                                                                                       "nsd_city":  {
+                                                                                                                                                                                                                        "type":  "integer",
+                                                                                                                                                                                                                        "format":  "int32"
+                                                                                                                                                                                                                    },
+                                                                                                                                                                                                       "nsd_pincode":  {
+                                                                                                                                                                                                                           "type":  "string"
+                                                                                                                                                                                                                       }
+                                                                                                                                                                                                   }
+                                                                                                                                                                                },
+                                                                                                                                                                     "encoding":  {
+                                                                                                                                                                                      "create_By":  {
+                                                                                                                                                                                                        "style":  "form"
+                                                                                                                                                                                                    },
+                                                                                                                                                                                      "first_name":  {
+                                                                                                                                                                                                         "style":  "form"
+                                                                                                                                                                                                     },
+                                                                                                                                                                                      "middle_name":  {
+                                                                                                                                                                                                          "style":  "form"
+                                                                                                                                                                                                      },
+                                                                                                                                                                                      "nsd_last_name":  {
+                                                                                                                                                                                                            "style":  "form"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                      "nsd_gender":  {
+                                                                                                                                                                                                         "style":  "form"
+                                                                                                                                                                                                     },
+                                                                                                                                                                                      "nsd_date_of_birth":  {
+                                                                                                                                                                                                                "style":  "form"
+                                                                                                                                                                                                            },
+                                                                                                                                                                                      "nsd_age":  {
+                                                                                                                                                                                                      "style":  "form"
+                                                                                                                                                                                                  },
+                                                                                                                                                                                      "nsd_original_profile_photo":  {
+                                                                                                                                                                                                                         "style":  "form"
+                                                                                                                                                                                                                     },
+                                                                                                                                                                                      "ProfilePhotoFile":  {
+                                                                                                                                                                                                               "style":  "form"
+                                                                                                                                                                                                           },
+                                                                                                                                                                                      "nsd_mobile_number":  {
+                                                                                                                                                                                                                "style":  "form"
+                                                                                                                                                                                                            },
+                                                                                                                                                                                      "nsd_email":  {
+                                                                                                                                                                                                        "style":  "form"
+                                                                                                                                                                                                    },
+                                                                                                                                                                                      "nsd_address":  {
+                                                                                                                                                                                                          "style":  "form"
+                                                                                                                                                                                                      },
+                                                                                                                                                                                      "nsd_state":  {
+                                                                                                                                                                                                        "style":  "form"
+                                                                                                                                                                                                    },
+                                                                                                                                                                                      "nsd_country":  {
+                                                                                                                                                                                                          "style":  "form"
+                                                                                                                                                                                                      },
+                                                                                                                                                                                      "nsd_father_name":  {
+                                                                                                                                                                                                              "style":  "form"
+                                                                                                                                                                                                          },
+                                                                                                                                                                                      "nsd_mother_name":  {
+                                                                                                                                                                                                              "style":  "form"
+                                                                                                                                                                                                          },
+                                                                                                                                                                                      "nsd_parent_contact_number":  {
+                                                                                                                                                                                                                        "style":  "form"
+                                                                                                                                                                                                                    },
+                                                                                                                                                                                      "nsd_parent_email":  {
+                                                                                                                                                                                                               "style":  "form"
+                                                                                                                                                                                                           },
+                                                                                                                                                                                      "nsd_city":  {
+                                                                                                                                                                                                       "style":  "form"
+                                                                                                                                                                                                   },
+                                                                                                                                                                                      "nsd_pincode":  {
+                                                                                                                                                                                                          "style":  "form"
+                                                                                                                                                                                                      }
+                                                                                                                                                                                  }
+                                                                                                                                                                 }
+                                                                                                                                     }
+                                                                                                                     },
+                                                                                                     "responses":  {
+                                                                                                                       "200":  {
+                                                                                                                                   "description":  "OK"
+                                                                                                                               }
+                                                                                                                   }
+                                                                                                 }
+                                                                                    },
+                  "/api/student_personal_information_insert/student_personal_information_insert":  {
+                                                                                                       "post":  {
+                                                                                                                    "tags":  [
+                                                                                                                                 "student_personal_information_insert"
+                                                                                                                             ],
+                                                                                                                    "requestBody":  {
+                                                                                                                                        "content":  {
+                                                                                                                                                        "multipart/form-data":  {
+                                                                                                                                                                                    "schema":  {
+                                                                                                                                                                                                   "type":  "object",
+                                                                                                                                                                                                   "properties":  {
+                                                                                                                                                                                                                      "stud_name":  {
+                                                                                                                                                                                                                                        "type":  "string"
+                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                      "stud_birth_date":  {
+                                                                                                                                                                                                                                              "type":  "string"
+                                                                                                                                                                                                                                          },
+                                                                                                                                                                                                                      "stud_gender":  {
+                                                                                                                                                                                                                                          "type":  "integer",
+                                                                                                                                                                                                                                          "format":  "int32"
+                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                      "stud_father_name":  {
+                                                                                                                                                                                                                                               "type":  "string"
+                                                                                                                                                                                                                                           },
+                                                                                                                                                                                                                      "stud_mother_name":  {
+                                                                                                                                                                                                                                               "type":  "string"
+                                                                                                                                                                                                                                           },
+                                                                                                                                                                                                                      "stud_user_id":  {
+                                                                                                                                                                                                                                           "type":  "integer",
+                                                                                                                                                                                                                                           "format":  "int32"
+                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                  }
+                                                                                                                                                                                               },
+                                                                                                                                                                                    "encoding":  {
+                                                                                                                                                                                                     "stud_name":  {
+                                                                                                                                                                                                                       "style":  "form"
+                                                                                                                                                                                                                   },
+                                                                                                                                                                                                     "stud_birth_date":  {
+                                                                                                                                                                                                                             "style":  "form"
+                                                                                                                                                                                                                         },
+                                                                                                                                                                                                     "stud_gender":  {
+                                                                                                                                                                                                                         "style":  "form"
+                                                                                                                                                                                                                     },
+                                                                                                                                                                                                     "stud_father_name":  {
+                                                                                                                                                                                                                              "style":  "form"
+                                                                                                                                                                                                                          },
+                                                                                                                                                                                                     "stud_mother_name":  {
+                                                                                                                                                                                                                              "style":  "form"
+                                                                                                                                                                                                                          },
+                                                                                                                                                                                                     "stud_user_id":  {
+                                                                                                                                                                                                                          "style":  "form"
+                                                                                                                                                                                                                      }
+                                                                                                                                                                                                 }
+                                                                                                                                                                                }
+                                                                                                                                                    }
+                                                                                                                                    },
+                                                                                                                    "responses":  {
+                                                                                                                                      "200":  {
+                                                                                                                                                  "description":  "OK"
+                                                                                                                                              }
+                                                                                                                                  }
+                                                                                                                }
+                                                                                                   },
+                  "/api/student_personal_information_insert/student_personal_information_select":  {
+                                                                                                       "get":  {
+                                                                                                                   "tags":  [
+                                                                                                                                "student_personal_information_insert"
+                                                                                                                            ],
+                                                                                                                   "responses":  {
+                                                                                                                                     "200":  {
+                                                                                                                                                 "description":  "OK",
+                                                                                                                                                 "content":  {
+                                                                                                                                                                 "text/plain":  {
+                                                                                                                                                                                    "schema":  {
+                                                                                                                                                                                                   "type":  "string"
+                                                                                                                                                                                               }
+                                                                                                                                                                                },
+                                                                                                                                                                 "application/json":  {
+                                                                                                                                                                                          "schema":  {
+                                                                                                                                                                                                         "type":  "string"
+                                                                                                                                                                                                     }
+                                                                                                                                                                                      },
+                                                                                                                                                                 "text/json":  {
+                                                                                                                                                                                   "schema":  {
+                                                                                                                                                                                                  "type":  "string"
+                                                                                                                                                                                              }
+                                                                                                                                                                               }
+                                                                                                                                                             }
+                                                                                                                                             }
+                                                                                                                                 }
+                                                                                                               }
+                                                                                                   },
+                  "/api/student_personal_information_insert/student_personal_information_select_by_id":  {
+                                                                                                             "get":  {
+                                                                                                                         "tags":  [
+                                                                                                                                      "student_personal_information_insert"
+                                                                                                                                  ],
+                                                                                                                         "parameters":  [
+                                                                                                                                            {
+                                                                                                                                                "name":  "id",
+                                                                                                                                                "in":  "query",
+                                                                                                                                                "schema":  {
+                                                                                                                                                               "type":  "integer",
+                                                                                                                                                               "format":  "int32"
+                                                                                                                                                           }
+                                                                                                                                            }
+                                                                                                                                        ],
+                                                                                                                         "responses":  {
+                                                                                                                                           "200":  {
+                                                                                                                                                       "description":  "OK",
+                                                                                                                                                       "content":  {
+                                                                                                                                                                       "text/plain":  {
+                                                                                                                                                                                          "schema":  {
+                                                                                                                                                                                                         "type":  "string"
+                                                                                                                                                                                                     }
+                                                                                                                                                                                      },
+                                                                                                                                                                       "application/json":  {
+                                                                                                                                                                                                "schema":  {
+                                                                                                                                                                                                               "type":  "string"
+                                                                                                                                                                                                           }
+                                                                                                                                                                                            },
+                                                                                                                                                                       "text/json":  {
+                                                                                                                                                                                         "schema":  {
+                                                                                                                                                                                                        "type":  "string"
+                                                                                                                                                                                                    }
+                                                                                                                                                                                     }
+                                                                                                                                                                   }
+                                                                                                                                                   }
+                                                                                                                                       }
+                                                                                                                     }
+                                                                                                         },
+                  "/api/student_personal_information_insert/student_personal_information_delete":  {
+                                                                                                       "get":  {
+                                                                                                                   "tags":  [
+                                                                                                                                "student_personal_information_insert"
+                                                                                                                            ],
+                                                                                                                   "parameters":  [
+                                                                                                                                      {
+                                                                                                                                          "name":  "id",
+                                                                                                                                          "in":  "query",
+                                                                                                                                          "schema":  {
+                                                                                                                                                         "type":  "integer",
+                                                                                                                                                         "format":  "int32"
+                                                                                                                                                     }
+                                                                                                                                      },
+                                                                                                                                      {
+                                                                                                                                          "name":  "stud_user_id",
+                                                                                                                                          "in":  "query",
+                                                                                                                                          "schema":  {
+                                                                                                                                                         "type":  "integer",
+                                                                                                                                                         "format":  "int32"
+                                                                                                                                                     }
+                                                                                                                                      }
+                                                                                                                                  ],
+                                                                                                                   "responses":  {
+                                                                                                                                     "200":  {
+                                                                                                                                                 "description":  "OK",
+                                                                                                                                                 "content":  {
+                                                                                                                                                                 "text/plain":  {
+                                                                                                                                                                                    "schema":  {
+                                                                                                                                                                                                   "type":  "string"
+                                                                                                                                                                                               }
+                                                                                                                                                                                },
+                                                                                                                                                                 "application/json":  {
+                                                                                                                                                                                          "schema":  {
+                                                                                                                                                                                                         "type":  "string"
+                                                                                                                                                                                                     }
+                                                                                                                                                                                      },
+                                                                                                                                                                 "text/json":  {
+                                                                                                                                                                                   "schema":  {
+                                                                                                                                                                                                  "type":  "string"
+                                                                                                                                                                                              }
+                                                                                                                                                                               }
+                                                                                                                                                             }
+                                                                                                                                             }
+                                                                                                                                 }
+                                                                                                               }
+                                                                                                   },
+                  "/api/TestConnection":  {
+                                              "get":  {
+                                                          "tags":  [
+                                                                       "TestConnection"
+                                                                   ],
+                                                          "responses":  {
+                                                                            "200":  {
+                                                                                        "description":  "OK"
+                                                                                    }
+                                                                        }
+                                                      }
+                                          },
+                  "/api/user_master_pagecs_/user_master_insert_user":  {
+                                                                           "post":  {
+                                                                                        "tags":  [
+                                                                                                     "user_master_pagecs_"
+                                                                                                 ],
+                                                                                        "requestBody":  {
+                                                                                                            "content":  {
+                                                                                                                            "multipart/form-data":  {
+                                                                                                                                                        "schema":  {
+                                                                                                                                                                       "type":  "object",
+                                                                                                                                                                       "properties":  {
+                                                                                                                                                                                          "um_user_name":  {
+                                                                                                                                                                                                               "type":  "string"
+                                                                                                                                                                                                           },
+                                                                                                                                                                                          "um_email_id":  {
+                                                                                                                                                                                                              "type":  "string"
+                                                                                                                                                                                                          },
+                                                                                                                                                                                          "um_password":  {
+                                                                                                                                                                                                              "type":  "string"
+                                                                                                                                                                                                          },
+                                                                                                                                                                                          "login_id":  {
+                                                                                                                                                                                                           "type":  "integer",
+                                                                                                                                                                                                           "format":  "int32"
+                                                                                                                                                                                                       }
+                                                                                                                                                                                      }
+                                                                                                                                                                   },
+                                                                                                                                                        "encoding":  {
+                                                                                                                                                                         "um_user_name":  {
+                                                                                                                                                                                              "style":  "form"
+                                                                                                                                                                                          },
+                                                                                                                                                                         "um_email_id":  {
+                                                                                                                                                                                             "style":  "form"
+                                                                                                                                                                                         },
+                                                                                                                                                                         "um_password":  {
+                                                                                                                                                                                             "style":  "form"
+                                                                                                                                                                                         },
+                                                                                                                                                                         "login_id":  {
+                                                                                                                                                                                          "style":  "form"
+                                                                                                                                                                                      }
+                                                                                                                                                                     }
+                                                                                                                                                    }
+                                                                                                                        }
+                                                                                                        },
+                                                                                        "responses":  {
+                                                                                                          "200":  {
+                                                                                                                      "description":  "OK"
+                                                                                                                  }
+                                                                                                      }
+                                                                                    }
+                                                                       },
+                  "/api/user_master_pagecs_/user_master_log_rightes":  {
+                                                                           "get":  {
+                                                                                       "tags":  [
+                                                                                                    "user_master_pagecs_"
+                                                                                                ],
+                                                                                       "parameters":  [
+                                                                                                          {
+                                                                                                              "name":  "um_email_id",
+                                                                                                              "in":  "query",
+                                                                                                              "schema":  {
+                                                                                                                             "type":  "string"
+                                                                                                                         }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "name":  "um_password",
+                                                                                                              "in":  "query",
+                                                                                                              "schema":  {
+                                                                                                                             "type":  "string"
+                                                                                                                         }
+                                                                                                          }
+                                                                                                      ],
+                                                                                       "responses":  {
+                                                                                                         "200":  {
+                                                                                                                     "description":  "OK",
+                                                                                                                     "content":  {
+                                                                                                                                     "text/plain":  {
+                                                                                                                                                        "schema":  {
+                                                                                                                                                                       "type":  "string"
+                                                                                                                                                                   }
+                                                                                                                                                    },
+                                                                                                                                     "application/json":  {
+                                                                                                                                                              "schema":  {
+                                                                                                                                                                             "type":  "string"
+                                                                                                                                                                         }
+                                                                                                                                                          },
+                                                                                                                                     "text/json":  {
+                                                                                                                                                       "schema":  {
+                                                                                                                                                                      "type":  "string"
+                                                                                                                                                                  }
+                                                                                                                                                   }
+                                                                                                                                 }
+                                                                                                                 }
+                                                                                                     }
+                                                                                   }
+                                                                       },
+                  "/api/user_master_pagecs_/forgot_password_update":  {
+                                                                          "post":  {
+                                                                                       "tags":  [
+                                                                                                    "user_master_pagecs_"
+                                                                                                ],
+                                                                                       "parameters":  [
+                                                                                                          {
+                                                                                                              "name":  "username",
+                                                                                                              "in":  "query",
+                                                                                                              "schema":  {
+                                                                                                                             "type":  "string"
+                                                                                                                         }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "name":  "otp",
+                                                                                                              "in":  "query",
+                                                                                                              "schema":  {
+                                                                                                                             "type":  "integer",
+                                                                                                                             "format":  "int32"
+                                                                                                                         }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "name":  "new_password",
+                                                                                                              "in":  "query",
+                                                                                                              "schema":  {
+                                                                                                                             "type":  "string"
+                                                                                                                         }
+                                                                                                          }
+                                                                                                      ],
+                                                                                       "responses":  {
+                                                                                                         "200":  {
+                                                                                                                     "description":  "OK",
+                                                                                                                     "content":  {
+                                                                                                                                     "text/plain":  {
+                                                                                                                                                        "schema":  {
+                                                                                                                                                                       "type":  "string"
+                                                                                                                                                                   }
+                                                                                                                                                    },
+                                                                                                                                     "application/json":  {
+                                                                                                                                                              "schema":  {
+                                                                                                                                                                             "type":  "string"
+                                                                                                                                                                         }
+                                                                                                                                                          },
+                                                                                                                                     "text/json":  {
+                                                                                                                                                       "schema":  {
+                                                                                                                                                                      "type":  "string"
+                                                                                                                                                                  }
+                                                                                                                                                   }
+                                                                                                                                 }
+                                                                                                                 }
+                                                                                                     }
+                                                                                   }
+                                                                      },
+                  "/api/user_master_pagecs_/SendOTP":  {
+                                                           "post":  {
+                                                                        "tags":  [
+                                                                                     "user_master_pagecs_"
+                                                                                 ],
+                                                                        "parameters":  [
+                                                                                           {
+                                                                                               "name":  "email_id",
+                                                                                               "in":  "query",
+                                                                                               "schema":  {
+                                                                                                              "type":  "string"
+                                                                                                          }
+                                                                                           }
+                                                                                       ],
+                                                                        "responses":  {
+                                                                                          "200":  {
+                                                                                                      "description":  "OK",
+                                                                                                      "content":  {
+                                                                                                                      "text/plain":  {
+                                                                                                                                         "schema":  {
+                                                                                                                                                        "type":  "string"
+                                                                                                                                                    }
+                                                                                                                                     },
+                                                                                                                      "application/json":  {
+                                                                                                                                               "schema":  {
+                                                                                                                                                              "type":  "string"
+                                                                                                                                                          }
+                                                                                                                                           },
+                                                                                                                      "text/json":  {
+                                                                                                                                        "schema":  {
+                                                                                                                                                       "type":  "string"
+                                                                                                                                                   }
+                                                                                                                                    }
+                                                                                                                  }
+                                                                                                  }
+                                                                                      }
+                                                                    }
+                                                       },
+                  "/api/user_master_pagecs_/VerifyOTP":  {
+                                                             "get":  {
+                                                                         "tags":  [
+                                                                                      "user_master_pagecs_"
+                                                                                  ],
+                                                                         "parameters":  [
+                                                                                            {
+                                                                                                "name":  "email_id",
+                                                                                                "in":  "query",
+                                                                                                "schema":  {
+                                                                                                               "type":  "string"
+                                                                                                           }
+                                                                                            }
+                                                                                        ],
+                                                                         "responses":  {
+                                                                                           "200":  {
+                                                                                                       "description":  "OK",
+                                                                                                       "content":  {
+                                                                                                                       "text/plain":  {
+                                                                                                                                          "schema":  {
+                                                                                                                                                         "type":  "string"
+                                                                                                                                                     }
+                                                                                                                                      },
+                                                                                                                       "application/json":  {
+                                                                                                                                                "schema":  {
+                                                                                                                                                               "type":  "string"
+                                                                                                                                                           }
+                                                                                                                                            },
+                                                                                                                       "text/json":  {
+                                                                                                                                         "schema":  {
+                                                                                                                                                        "type":  "string"
+                                                                                                                                                    }
+                                                                                                                                     }
+                                                                                                                   }
+                                                                                                   }
+                                                                                       }
+                                                                     }
+                                                         }
+              },
+    "components":  {
+
+                   }
+}
