@@ -1,0 +1,21 @@
+# Node Modules
+node_modules/
+
+# React Build
+build/
+dist/
+
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# User Files
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Environment Files
+.env

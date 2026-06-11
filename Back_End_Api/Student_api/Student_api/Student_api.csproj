@@ -1,0 +1,143 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0\www.root\appsettings.Development.json" />
+    <Content Include="bin\Debug\net8.0\www.root\appsettings.json" />
+    <Content Include="bin\Debug\net8.0\www.root\Student_api.deps.json" />
+    <Content Include="bin\Debug\net8.0\www.root\Student_api.runtimeconfig.json" />
+    <Content Include="bin\Debug\net8.0\www.root\Student_api.staticwebassets.endpoints.json" />
+    <Content Include="bin\Release\net8.0\appsettings.Development.json" />
+    <Content Include="bin\Release\net8.0\appsettings.json" />
+    <Content Include="bin\Release\net8.0\Student_api.deps.json" />
+    <Content Include="bin\Release\net8.0\Student_api.runtimeconfig.json" />
+    <Content Include="bin\Release\net8.0\Student_api.staticwebassets.endpoints.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0" />
+    <PackageReference Include="SolrNet.Core" Version="1.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net8.0\www.root\uploads\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="DAL\" />
+    <Folder Include="wwwroot\Upload_Photo\" />
+    <Folder Include="wwwroot\Upload_Photo\student_Profile_Photo\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net8.0\www.root\cs\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\de\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\es\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\fr\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\it\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\ja\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\ko\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.AspNetCore.Authentication.JwtBearer.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.Bcl.Cryptography.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.Data.SqlClient.Extensions.Abstractions.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.Data.SqlClient.Internal.Logging.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.IdentityModel.Abstractions.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.OpenApi.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Microsoft.SqlServer.Server.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net8.0\www.root\pl\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\pt-BR\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net8.0\www.root\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net8.0\www.root\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net8.0\www.root\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net8.0\www.root\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net8.0\www.root\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll" />
+    <None Include="bin\Debug\net8.0\www.root\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll" />
+    <None Include="bin\Debug\net8.0\www.root\ru\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\SolrNet.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Student_api.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Student_api.exe" />
+    <None Include="bin\Debug\net8.0\www.root\Student_api.pdb" />
+    <None Include="bin\Debug\net8.0\www.root\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Debug\net8.0\www.root\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <None Include="bin\Debug\net8.0\www.root\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\net8.0\www.root\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Debug\net8.0\www.root\System.Diagnostics.EventLog.dll" />
+    <None Include="bin\Debug\net8.0\www.root\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Debug\net8.0\www.root\System.Security.Cryptography.Pkcs.dll" />
+    <None Include="bin\Debug\net8.0\www.root\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\net8.0\www.root\tr\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\web.config" />
+    <None Include="bin\Debug\net8.0\www.root\zh-Hans\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net8.0\www.root\zh-Hant\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\cs\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\de\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\es\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\fr\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\it\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\ja\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\ko\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Bcl.Cryptography.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Data.SqlClient.Internal.Logging.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.IdentityModel.Abstractions.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.OpenApi.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.SqlServer.Server.dll" />
+    <None Include="bin\Release\net8.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Release\net8.0\pl\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll" />
+    <None Include="bin\Release\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll" />
+    <None Include="bin\Release\net8.0\ru\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\SolrNet.dll" />
+    <None Include="bin\Release\net8.0\Student_api.dll" />
+    <None Include="bin\Release\net8.0\Student_api.exe" />
+    <None Include="bin\Release\net8.0\Student_api.pdb" />
+    <None Include="bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <None Include="bin\Release\net8.0\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Release\net8.0\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Release\net8.0\System.Diagnostics.EventLog.dll" />
+    <None Include="bin\Release\net8.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Release\net8.0\System.Security.Cryptography.Pkcs.dll" />
+    <None Include="bin\Release\net8.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Release\net8.0\tr\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Release\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll" />
+  </ItemGroup>
+
+</Project>
