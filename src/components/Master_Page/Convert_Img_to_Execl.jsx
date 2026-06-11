@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import * as XLSX from 'xlsx';
 import { GoogleGenAI } from '@google/genai';
-
+ 
 const STORAGE_KEY = 'img_to_excel_session';
 
 const Convert_Img_to_Excel = () => {
@@ -18,8 +18,10 @@ const Convert_Img_to_Excel = () => {
     const fileInputRef = useRef(null);
     const processingRef = useRef(false);
 
+    const defaultKey = import.meta.env.VITE_GEMINI_API_KEY;
+
     const [apiKey, setApiKey] = useState(() => {
-        return localStorage.getItem('gemini_api_key') || 'AQ.Ab8RN6KjTOvlFOlZZ1bxynZG5EG2HTm5ghdDeVHFfUFIw8JOrg';
+        return localStorage.getItem('gemini_api_key') || defaultKey;
     });
     const [showApiKey, setShowApiKey] = useState(false);
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
